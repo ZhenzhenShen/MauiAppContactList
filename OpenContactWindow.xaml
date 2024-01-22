@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppContactList.OpenContactWindow"
+             Title="Add Contact">
+
+	<StackLayout Padding="20">
+		<StackLayout Orientation="Horizontal" Spacing="10">
+			<Label Text="Name" VerticalOptions="Center"/>
+			<Entry x:Name="nameEntry" Placeholder="Enter name" HorizontalOptions="FillAndExpand"/>
+		</StackLayout>
+
+		<StackLayout Orientation="Horizontal" Spacing="10">
+			<Label Text="Company" VerticalOptions="Center"/>
+			<Entry x:Name="companyEntry" Placeholder="Enter company" HorizontalOptions="FillAndExpand"/>
+		</StackLayout>
+
+		<StackLayout Orientation="Horizontal" Spacing="10">
+			<Label Text="Phone" VerticalOptions="Center"/>
+			<Entry x:Name="phoneEntry" Placeholder="Enter phone" HorizontalOptions="FillAndExpand"/>
+		</StackLayout>
+
+		<StackLayout Orientation="Horizontal" Spacing="10">
+			<Label Text="Email" VerticalOptions="Center"/>
+			<Entry x:Name="emailEntry" Placeholder="Enter email" HorizontalOptions="FillAndExpand"/>
+		</StackLayout>
+
+		<Button Text="Save Contact" Clicked="SaveContactClicked"/>
+	</StackLayout>
+</ContentPage>
